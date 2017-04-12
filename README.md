@@ -11,4 +11,5 @@ Descriptions
 * ```gex_randwep``` - Small Lua script for selecting Random weapons for Goldeneye X (and two databases)
 * ```f_datetime.lua``` - No, not every system has a decent ```date``` executable. Really hacky thing I use for generating dates to be included in binary files or whatever.
 * ```packbits.lua``` - Packbits file encoder/decoder
+* ```fp5bpp_makepal_ppm.lua``` - Generates a PPM file containing every possible color available in Fire Pro Wrestling Returns' Edit Mode.
 
