@@ -72,16 +72,19 @@ int main(int argc, char **argv){
 		}
 		printf("\n");
 		printf("Unused value count: %d\n",unusedValueCount);
-		printf("-------------------------\n");
+		if(unusedValueCount > 0)
+		{
+			printf("-------------------------\n");
 
-		for(int i = 0; i < 256; i++){
-			if(frequencyCountTotal[i] == 0){
-				printf("%02X ",i);
-				++unusedValueSep;
-			}
-			if(unusedValueSep == 16){
-				unusedValueSep = 0;
-				printf("\n");
+			for(int i = 0; i < 256; i++){
+				if(frequencyCountTotal[i] == 0){
+					printf("%02X ",i);
+					++unusedValueSep;
+				}
+				if(unusedValueSep == 16){
+					unusedValueSep = 0;
+					printf("\n");
+				}
 			}
 		}
 
